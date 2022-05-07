@@ -19,8 +19,19 @@ h1, h2, h3, #seo {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+p {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
 a {
     text-decoration: none;
+    transition-duration: 1s;
+}
+
+a:hover {
+    color: var(--seo);
+    text-decoration: underline;
 }
 
 body {
@@ -31,10 +42,14 @@ body {
 /* HEADER */
 header {
     background-color: var(--tertiary);
-    padding: 40px 20px;
+    padding: 25px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -100,21 +115,13 @@ main {
 }
 
 .card div {
-    padding: 25px;
+    padding: 0 25px;
     width: 65%;
 }
 
 .card h2 {
     padding-bottom: 15px;
     font-size: 40px;
-}
-
-.text-right {
-    float: right;
-}
-
-.text-left {
-    float: left;
 }
 
 /* RIGHT | ASIDE */
