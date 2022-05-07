@@ -4,8 +4,6 @@
     --tertiary: #2a607c;
     --text: #ffffff;
     --seo: #dfe0d9;
-    --gill: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --trebuchet: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 * {
@@ -14,11 +12,11 @@
     margin: 0;
     color: var(--text);
     border: 1px solid red;
-    font-family: var(--gill);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: var(--trebuchet);
+h1, h2, h3, #seo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 a {
@@ -59,11 +57,12 @@ nav ul {
     justify-content: space-around;
 }
 
+/* FOOTER */
 footer {
     display: none;
 }
 
-/* HERO SPLASH IMG */
+/* SECTION | HERO */
 #hero {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
@@ -72,6 +71,7 @@ footer {
     height: 800px;
 }
 
+/* SECTION | CONTENT */
 .content {
     padding: 20px;
     display: flex;
@@ -82,13 +82,43 @@ footer {
     width: 20%;
 }
 
-#left {
-    background-color: var(--secondary);
+/* LEFT | MAIN */
+main {
     width: 65vw;
-    padding: 25px;
+    align-content: space-between;
 }
 
-#right {
+.card {
+    background-color: var(--secondary);
+    display: flex;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.card img {
+    width: 35%;
+}
+
+.card div {
+    padding: 25px;
+    width: 65%;
+}
+
+.card h2 {
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+.text-right {
+    float: right;
+}
+
+.text-left {
+    float: left;
+}
+
+/* RIGHT | ASIDE */
+aside {
     background-color: var(--tertiary);
     width: 30vw;
     padding: 25px;
